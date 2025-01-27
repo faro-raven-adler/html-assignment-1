@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alt School Bio - Assignment 1</title>
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+     <!-- Navigation Header-->
+     <header>
+        <nav>
+          <div id="logo">
+            <h1 id="home">FARO</h1>
+          <p>Alt School ID: <b>ALT/SOE/024/3002</p>
+          </div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./form.html">Form</a></li>
+          </ul>
+        </nav>
+        <hr />
+      </header>
+
+      <main>
+        <form action="" method="post" aria-label="Signup Form">
+          <div class="form-header">
+            <h2>Signup</h2>
+            <p>Take the next steps to apply to AltSchool Africa.</p>
+          </div>
+
+          <div class="form-section">
+            <section id="lhs">
+              <div class="form-input">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="Enter your first name"
+                  required
+                  minlength="2"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-input">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-input">
+                <label for="date-of-birth">Date of Birth</label>
+                <input
+                  type="date"
+                  name="date-of-birth"
+                  id="date-of-birth"
+                  placeholder="Date of birth"
+                />
+              </div>
+
+              <div class="form-input">
+                <label for="country-of-residence">Country of Residence</label>
+                <input
+                  type="text"
+                  name="country-of-residence"
+                  id="country-of-residence"
+                  placeholder="Country of Residence"
+                />
+              </div>
+
+              <div class="form-input">
+                <label for="password">Password</label>
+                <div class="pwd">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                    aria-required="true"
+                  />
+                  <i
+                    class="far fa-eye"
+                    id="toggle-password"
+                    aria-label="Toggle password visibility"
+                  ></i>
+                </div>
+              </div>
+            </section>
+
+            <section id="rhs">
+              <div class="form-input">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Enter your last name"
+                  required
+                  minlength="2"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-input">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required aria-required="true">
+                  <option value="">Select your gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+
+              <div class="form-input">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  pattern="[0-9]{10,15}"
+                  aria-label="Phone number (10-15 digits)"
+                />
+              </div>
+
+              <div class="form-input">
+                <label for="state">State of Residence</label>
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="Enter your state"
+                />
+              </div>
+
+              <div class="form-input">
+                <label for="confirm-password">Confirm Password</label>
+                <div class="pwd">
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    placeholder="Confirm Password"
+                    required
+                    aria-required="true"
+                  />
+                  <i
+                    class="far fa-eye"
+                    id="toggle-confirm-password"
+                    aria-label="Toggle confirm password visibility"
+                  ></i>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="bottom-form">
+            <div class="form-input">
+              <label for="referral">How did you hear about us?</label>
+              <input
+                type="text"
+                name="referral"
+                id="referral"
+                placeholder="Optional: Let us know how you found out about us."
+              />
+            </div>
+
+            <p id="toc">
+              By clicking continue, I agree to the
+              <a href="#">Terms of Use</a> and acknowledge that I have read the
+              <a href="#">Privacy Policy</a>.
+            </p>
+
+            <button type="submit">
+              Signup <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+      </main>
+
+      <footer>
+        <hr />
+        <p>
+          &copy; Raven Studio 2025 |
+          <a href="mailto:faro.raven.adler@gmail.com"
+            >faro.raven.adler@gmail.com</a
+          >
+        </p>
+      </footer>
+    </div>
+
+
+  </body>
+</html>
